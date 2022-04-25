@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header.js';
-import Clb from './Clb.js';
+import Dater from './Dater.js';
 import Footer from './Footer.js';
 
 
@@ -11,7 +11,7 @@ const App = () => {
                 <Header/>
             </div>
             <div className='flex flex-col  mt-4 font-mono'>
-                <Clb/>
+                <Dater/>
             </div>
             <div className='footer bottom-2 absolute  text-white'>
                 <Footer/>
