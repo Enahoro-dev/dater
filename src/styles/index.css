@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color: black;
+}
+
+.date-picker  {
+    background-color: white !important;
+}
+
+.footer {
+    left:50%;
+    transform: translate(-50%, 0);
+    width:100%;
+    
+}
