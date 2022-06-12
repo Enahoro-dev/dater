@@ -23,7 +23,7 @@ const Dater = (props) => {
     return(
         <div>
             <div className='flex flex-col justify-center items-center'>
-                <label className='text-green mb-2 text-lg font-bold'>LAST MENSTRUAL PERIOD</label>
+                <label className='text-green mb-2 text-base font-bold'>LAST MENSTRUAL PERIOD</label>
                 <DatePicker className='date-picker text-black ' selected={date} onSelect={setDate} minDate={minDate} maxDate={maxDate}/>
                 <button disabled ={submitting} className=' mt-4 z-10 text-lg bg-green text-white w-2/5 h-8 font-normal' onClick={() =>  props.changePopup(!props.popup)}>Calculate</button>
             </div>

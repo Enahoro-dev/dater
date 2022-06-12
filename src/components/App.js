@@ -31,7 +31,7 @@ const App = () => {
                     <div className=' mt-4'>
                         <Header/>
                     </div>
-                    <div className='flex flex-col  mt-12'>
+                    <div className='flex flex-col  mt-6'>
                         <Dater popup={popup} setPopup={setPopup} changePopup={(popup) => setPopup(popup)} />
                     </div>
                     
