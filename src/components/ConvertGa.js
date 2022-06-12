@@ -26,7 +26,8 @@ const ConvertGa = ({date}) => {
     if (ga){
         return(
             <div>
-                <h3>GA: {ga} </h3>    
+                <h2 className='text-xl font-bold'>GESTATIONAL AGE</h2>    
+                <p className='text-lg font-normal'>{ga}</p>
             </div>
         )
         

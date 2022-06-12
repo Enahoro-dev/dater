@@ -1,14 +1,14 @@
 import React from 'react';
-import clbImage from '../assets/clb.jpg';
+import crib from '../assets/crib.png';
 
 const Header = () => {
     return(
         <div className='flex flex-col justify-center items-center'>
             <div>
-                <h1 className='text-lg text-white mb-2 tracking-wide font-bold'>CALCULER LE BÉBÉ</h1>
+                <h1 className='text-2xl text-green mb-16 tracking-wide font-bold font-yellowtail'>DATER</h1>
             </div>
-            <div>
-                <img src={clbImage} alt='clb'/>
+            <div className='w-3/4'>
+                <img src={crib}alt='crib'/>
             </div>
         </div>
     )

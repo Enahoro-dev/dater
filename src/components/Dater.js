@@ -1,29 +1,33 @@
 import React, { useState } from 'react';
-import DatePicker from 'react-date-picker';
-import ConvertEdd from './ConvertEdd.js';
-import ConvertGa from './ConvertGa.js';
+import DatePicker from 'react-datepicker';
+import Popup from './Popup';
+import 'react-datepicker/dist/react-datepicker.css';
 
-const Dater = () => {
+const Dater = (props) => {
     const [date, setDate] = useState('');
+    
     let dateMin =new Date()
     dateMin.setMonth(dateMin.getMonth() -10);
     let minDate= dateMin
 
     let dateMax =new Date()
     dateMax.setDate(dateMax.getDate() -1)
+    let maxDate=dateMax
+
+        
+    let submitting = true
+    if (date){
+        submitting=false
+    }
 
     return(
         <div>
             <div className='flex flex-col justify-center items-center'>
-                <label className='text-white mb-1 text-sm'>LAST MENSTRUAL PERIOD</label>
-                <DatePicker dayPlaceholder='dd' monthPlaceholder='mm' yearPlaceholder='yyyy' minDate={minDate} maxDate={dateMax} onChange={setDate} value={date} className='date-picker'/>
+                <label className='text-green mb-2 text-lg font-bold'>LAST MENSTRUAL PERIOD</label>
+                <DatePicker className='date-picker text-black ' selected={date} onSelect={setDate} minDate={minDate} maxDate={maxDate}/>
+                <button disabled ={submitting} className=' mt-4 z-10 text-lg bg-green text-white w-2/5 h-8 font-normal' onClick={() =>  props.changePopup(!props.popup)}>Calculate</button>
             </div>
-            <div  className='text-white ml-0 mt-8 text-sm flex flex-col items-center'>
-                <div className='flex flex-col items-start'>
-                    <ConvertEdd date={date}/>
-                    <ConvertGa date={date}/>
-                </div>
-            </div>
+            <Popup date={date} popup={props.popup} setPopup={props.setPopup}/>
         </div>
     )
 
