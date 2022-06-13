@@ -24,8 +24,8 @@ const ConvertEdd = ({date}) => {
     if (edd){
         return (
             <div className='mb-6'>
-                <h3 className='text-xl font-bold'>EXPECTED DATE OF DELIVERY</h3>   
-                <p className='text-lg font-normal'>{edd}</p> 
+                <h3 className='text-lg font-bold'>EXPECTED DATE OF DELIVERY</h3>   
+                <p className='text-base font-normal'>{edd}</p> 
             </div>
         );
     }

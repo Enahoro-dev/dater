@@ -10,7 +10,7 @@ console.log(popupString)
 return (
         <div className={`text-green bottom-0 fixed text-lg font-bold bg-white z-10 w-full rounded-t-3xl ${popupString}` }>
             <div className='w-1/5 border-t border-green mx-auto border-4 mt-2'></div>
-            <h2 className='text-green flex flex-col items-center mt-4 text-2xl'>RESULTS</h2>
+            <h2 className='text-green flex flex-col items-center mt-4 text-xl'>RESULTS</h2>
             <div className='flex flex-col items-start mt-6 ml-12'>
                 <ul className='list-disc text-green'>
                     <li><ConvertEdd date={props.date}/></li>
@@ -18,7 +18,7 @@ return (
                 </ul>     
             </div>
             <div className='flex flex-col items-center'>
-                <button className='mt-8 absolute text-xl bg-green rounded-full text-white w-3/4 h-12' onClick={() => props.setPopup(!props.popup)}> Cancel</button>
+                <button className='mt-12 absolute text-xl bg-green rounded-full text-white w-3/4 h-12' onClick={() => props.setPopup(!props.popup)}> Cancel</button>
             </div>
                 
         </div>
