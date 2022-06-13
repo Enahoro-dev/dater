@@ -17,7 +17,7 @@ return (
                 </ul>     
             </div>
             <div className='flex flex-col items-center'>
-                <button className='mt-10 absolute text-xl bg-green rounded-full text-white w-3/4 h-12' onClick={() => props.setPopup(!props.popup)}> Cancel</button>
+                <button className='mt-12 absolute text-xl bg-green rounded-full text-white w-3/4 h-12' onClick={() => props.setPopup(!props.popup)}> Cancel</button>
             </div>
                 
         </div>
