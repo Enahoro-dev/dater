@@ -18,27 +18,30 @@ const App = () => {
     },[]) 
 
     return(
-        <div>
+        <div >
              { !done ? (
             <div className='appLoader'>
                 <ReactLoading type={'cylon'} color={'#2d8d79'} height={'50px'} width={'100px'} />
             </div>
         ) : (   
                 <div className='font-sans fixed mt-0' >
-                    <div className='relative'>
-                    <div className={`absolute  w-screen h-screen top-0 left-0  ${blurString}`}></div>
+                    <div >
+                        <h2 className='text-2xl font-bold largeScreen'>VIEW ON A MOBILE PHONE</h2>
+                    </div>
+                    <div className='relative body'>
+                        <div className={`absolute  w-screen h-screen top-0 left-0  ${blurString}`}></div>
 
-                    <div className=' mt-4'>
-                        <Header/>
-                    </div>
-                    <div className='flex flex-col  mt-6'>
-                        <Dater popup={popup} setPopup={setPopup} changePopup={(popup) => setPopup(popup)} />
-                    </div>
+                        <div className=' mt-4'>
+                            <Header/>
+                        </div>
+                        <div className='flex flex-col  mt-6'>
+                            <Dater popup={popup} setPopup={setPopup} changePopup={(popup) => setPopup(popup)} />
+                        </div>
                     
 
-                    <div className='footer bottom-6 fixed  text-white'>
-                        <Footer/>
-                    </div>
+                        <div className='footer bottom-6 fixed  text-white'>
+                            <Footer/>
+                        </div>
                     </div>
                 </div>  
         )}

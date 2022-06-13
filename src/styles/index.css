@@ -10,6 +10,9 @@
     }
 }
 
+
+
+
 body {
     background-color: #fdb9ca;
 }
@@ -40,4 +43,25 @@ body {
     transform: translate(-50%,-50%);
     
     
+}
+
+.largeScreen {
+    position:fixed;
+    left:50%;
+    top:45%;
+    transform: translate(-50%,-50%);
+    
+    
+}
+
+@media (min-width:500px){
+    .body{
+        display: none;
+    }
+}
+
+@media (max-width:500px){
+    .largeScreen{
+        display: none;
+    }
 }
