@@ -5,7 +5,6 @@ import ConvertGa from './ConvertGa.js';
 
 const Popup = (props) => {
 let popupString = props.popup? 'h-0 transition-all ' : 'h-3/5 transition-all duration-400 ease-in-out'
-console.log(popupString)
 
 return (
         <div className={`text-green bottom-0 fixed text-lg font-bold bg-white z-10 w-full rounded-t-3xl ${popupString}` }>
