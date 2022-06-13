@@ -20,7 +20,7 @@ const App = () => {
     return(
         <div>
              { !done ? (
-            <div className='grid place-items-center h-screen'>
+            <div className='appLoader'>
                 <ReactLoading type={'cylon'} color={'#2d8d79'} height={'50px'} width={'100px'} />
             </div>
         ) : (   
