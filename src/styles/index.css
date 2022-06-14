@@ -18,10 +18,10 @@ body {
 }
 
 .date-picker  {
-    margin-left: 35%;
-    width:30%;
+    margin-left: 30%;
+    width:40%;
     color: #2d8d79;
-    height:30px;
+    height:35px;
     font-size: 16px;
     text-align: center;
 }
