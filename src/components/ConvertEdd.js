@@ -5,15 +5,16 @@ const ConvertEdd = ({date}) => {
     
     useEffect(() => {
         if (date) {
-            const newMonth = (date, days) => {
+            const newMonth = (date, months) => {
                 const newDate = new Date(date.getTime());
-                newDate.setMonth(date.getMonth() + days);
+                newDate.setMonth(date.getMonth() + months);
                 return newDate;
             }
             const dateNew = newMonth(date, 9)
+            //created a function to add nine months to the last menstrual period
             const newDay= new Date(dateNew.setDate(dateNew.getDate() + 7 ))
             const dateFinal=newDay.toDateString()
-    
+            //added a week and converted to a date string which creates the average expected date of delivery
             setExpectedDelivery(dateFinal) 
         }
         

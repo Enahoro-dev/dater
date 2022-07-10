@@ -17,51 +17,37 @@ body {
     background-color: #fdb9ca;
 }
 
-.date-picker  {
-    margin-left: 30%;
-    width:40%;
-    color: #2d8d79;
-    height:35px;
-    font-size: 16px;
-    text-align: center;
-}
+
 .overlay{
     backdrop-filter: blur(2px);
+}
+
+input{
+    text-align: center;
 }
 
 .footer {
     left:50%;
     transform: translate(-50%, 0);
     width:100%;
-    
 }
+
+
 
 .appLoader {
     position:fixed;
     left:50%;
     top:45%;
     transform: translate(-50%,-50%);
-    
-    
 }
 
-.largeScreen {
-    position:fixed;
-    left:50%;
-    top:45%;
-    transform: translate(-50%,-50%);
-    
-    
-}
-
-@media (min-width:500px){
-    .body{
-        display: none;
+@media screen and (min-width:640px){
+    .popup {
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);  
     }
 }
 
-@media (max-width:500px){
-    .largeScreen{
-        display: none;
-    }
-}
+
+

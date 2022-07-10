@@ -15,6 +15,7 @@ const ConvertGa = ({date}) => {
             const weekFormatted = pregnantWeeks < 1 ? '' : pregnantWeeks
             const dayFormatted = remDays < 1 ? '' : remDays
             const age=`${weekFormatted} ${weekUnit} ${dayFormatted} ${dayUnit}`
+            //found the time between the last menstrual period and present day, converted to 'weeks' and 'days' format
             setGestationalAge(age)
         }
         
